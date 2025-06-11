@@ -9,6 +9,10 @@ import requests
 import os
 
 # 设置 ChromeDriver 的路径
+proxies = {
+    'http': 'http://127.0.0.1:7890',
+    'https': 'http://127.0.0.1:7890',
+}
 
 driver = webdriver.Edge()
 def download_audio(link, keywords):
